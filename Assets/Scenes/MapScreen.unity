@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1753,8 +1753,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1172, y: 498}
+  m_AnchoredPosition: {x: 0, y: -0.00062561035}
+  m_SizeDelta: {x: 1024, y: 538.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266995756
 MonoBehaviour:
@@ -2015,6 +2015,7 @@ GameObject:
   - component: {fileID: 1418458559}
   - component: {fileID: 1418458558}
   - component: {fileID: 1418458557}
+  - component: {fileID: 1418458560}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -2081,7 +2082,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1418458558}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1418458560}
+        m_MethodName: SceneSwitcher_Home
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1418458558
@@ -2121,6 +2133,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418458555}
   m_CullTransparentMesh: 0
+--- !u!114 &1418458560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418458555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e338617e21e76429676f1d9cfa012f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1466507639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3106,6 +3130,7 @@ GameObject:
   - component: {fileID: 2004984377}
   - component: {fileID: 2004984376}
   - component: {fileID: 2004984375}
+  - component: {fileID: 2004984378}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -3172,7 +3197,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2004984376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2004984378}
+        m_MethodName: SceneSwitcher_Shop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2004984376
@@ -3212,6 +3248,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004984373}
   m_CullTransparentMesh: 0
+--- !u!114 &2004984378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004984373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e338617e21e76429676f1d9cfa012f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2062327089
 GameObject:
   m_ObjectHideFlags: 0
